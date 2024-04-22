@@ -3,12 +3,12 @@
 /// Copyright (c) 2021-2022, Hitesh Kumar Saini <saini123hitesh@gmail.com>.
 /// All rights reserved.
 /// Use of this source code is governed by MIT license that can be found in the LICENSE file.
+library;
 
 // ignore_for_file: missing_js_lib_annotation
 
 import 'dart:async';
 import 'dart:convert';
-import 'dart:typed_data';
 import 'package:js/js.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_web_plugins/flutter_web_plugins.dart';
