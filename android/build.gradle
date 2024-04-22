@@ -1,29 +1,21 @@
+plugins {
+    id 'com.android.library'
+}
+
 group 'com.alexmercerind.flutter_media_metadata'
 version '1.0'
 
-buildscript {
+allprojects {
     repositories {
         google()
         mavenCentral()
-    }
-
-    dependencies {
-        classpath 'com.android.tools.build:gradle:8.3.2'
+        gradlePluginPortal()
     }
 }
-
-rootProject.allprojects {
-    repositories {
-        google()
-        mavenCentral()
-    }
-}
-
-apply plugin: 'com.android.library'
 
 android {
     namespace 'com.alexmercerind.flutter_media_metadata'
-    compileSdkVersion 32
+    compileSdkVersion 34
 
     defaultConfig {
         minSdkVersion 16
@@ -34,7 +26,5 @@ android {
     dependencies {
         // compile 'net.sourceforge.streamsupport:android-retrofuture:1.7.2'
         implementation 'net.sourceforge.streamsupport:android-retrofuture:1.7.4'
-
     }
-    
 }
