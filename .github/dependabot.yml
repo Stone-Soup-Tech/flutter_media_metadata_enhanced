@@ -19,7 +19,7 @@ updates:
         applies-to: version-updates
         patterns:
           - "*"       # A wildcard that matches all dependencies in the package
-  
+
   # Keep the Android dependencies up to date
   - package-ecosystem: "gradle" # See documentation for possible values
     directory: "/" # Location of package manifests
