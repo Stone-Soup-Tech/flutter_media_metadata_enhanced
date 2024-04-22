@@ -1,1 +1,6 @@
+plugins {
+    id 'com.android.library' version '8.3.1'
+    id 'org.jetbrains.kotlin.android' version '1.9.21'
+}
+
 rootProject.name = 'flutter_media_metadata'
