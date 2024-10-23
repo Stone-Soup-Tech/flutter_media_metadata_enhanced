@@ -83,9 +83,6 @@ jobs:
             -f target_commitish='master' \
             -f previous_tag_name='${{ env.LAST_TAG }}')
 
-          # Print the response for debugging reasons
-          echo $RESPONSE
-
           # Retrieve the release notes from the response and save them to a file for the next step.
           echo $RESPONSE | jq -r ".body" >> release_notes.txt
         env:
