@@ -25,7 +25,7 @@
 /// Uint8List? albumArt = metadata.albumArt;
 /// ```
 ///
-library flutter_media_metadata;
+library;
 
 export 'package:flutter_media_metadata/src/flutter_media_metadata_native.dart'
     if (dart.library.html) 'package:flutter_media_metadata/src/flutter_media_metadata_web.dart';
