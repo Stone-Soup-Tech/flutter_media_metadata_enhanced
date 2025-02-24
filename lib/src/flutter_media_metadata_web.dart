@@ -1,6 +1,6 @@
 /// This file is a part of flutter_media_metadata (https://github.com/alexmercerind/flutter_media_metadata).
 ///
-/// Copyright (c) 2021-2022, Hitesh Kumar Saini <saini123hitesh@gmail.com>.
+/// Copyright (c) 2021-2022, Hitesh Kumar Saini &lt;saini123hitesh@gmail.com&gt;.
 /// All rights reserved.
 /// Use of this source code is governed by MIT license that can be found in the LICENSE file.
 library;
@@ -9,11 +9,11 @@ library;
 
 import 'dart:async';
 import 'dart:convert';
-import 'package:js/js.dart';
-import 'package:flutter/services.dart';
-import 'package:flutter_web_plugins/flutter_web_plugins.dart';
 
+import 'package:flutter/services.dart';
 import 'package:flutter_media_metadata/src/models/metadata.dart';
+import 'package:flutter_web_plugins/flutter_web_plugins.dart';
+import 'package:js/js.dart';
 
 /// ## MetadataRetriever
 ///
@@ -139,10 +139,11 @@ class MetadataRetriever {
 class _Promise<T> {
   external _Promise(
       void Function(void Function(T result) resolve, Function reject) executor);
+
   external _Promise then(void Function(T result) onFulfilled,
       [Function onRejected]);
-  // external _Promise(void executor(void resolve(T result), Function reject));
-  // external _Promise then(void onFulfilled(T result), [Function onRejected]);
+// external _Promise(void executor(void resolve(T result), Function reject));
+// external _Promise then(void onFulfilled(T result), [Function onRejected]);
 }
 
 @JS('MediaInfo')
@@ -169,6 +170,7 @@ class _Opts {
 class _MediaInfo {
   external _Promise<String> analyzeData(int Function() getSize,
       _Promise<Uint8List> Function(int chunkSize, int offset) promise);
+
   // _Promise<Uint8List> promise(int chunkSize, int offset));
 
   external factory _MediaInfo();
