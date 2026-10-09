@@ -13,7 +13,7 @@ A Flutter plugin to read metadata of media files.
   s.license          = { :file => '../LICENSE' }
   s.author           = { 'Hitesh Kumar Saini' => 'saini123hitesh@gmail.com' }
   s.source           = { :path => '.' }
-  s.source_files = 'Classes/**/*'
+  s.source_files = 'flutter_media_metadata/Sources/flutter_media_metadata/**/*.swift'
   s.dependency 'Flutter'
   s.platform = :ios, '8.0'
 
